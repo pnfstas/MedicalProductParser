@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="misc\**" />
+    <EmbeddedResource Remove="misc\**" />
+    <None Remove="misc\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AngleSharp" Version="1.4.0" />
+    <PackageReference Include="AngleSharp.Io" Version="1.0.0" />
+    <PackageReference Include="AngleSharp.Js" Version="0.15.0" />
+    <PackageReference Include="CsvHelper" Version="33.1.0" />
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.40.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="144.0.7559.13300" />
+  </ItemGroup>
+
+</Project>
